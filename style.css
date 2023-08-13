@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(187, 236, 187);
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+  width: 70%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.header_top {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(4, 78, 4);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.box h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.7rem;
+  background-color: white;
+  margin-left: 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.game_container {
+  /* height: calc(100% - 7.2rem); */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: rgb(4, 78, 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.bubble:hover {
+  background-color: rgb(6, 119, 6);
+}
+
+/* -------------- media ------------- */
+
+@media (max-width: 994px) {
+  html {
+    font-size: 55%;
+  }
+
+  .game {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .game {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+}
