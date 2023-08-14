@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -51,11 +54,34 @@ body {
 }
 
 .game_container {
-  /* height: calc(100% - 7.2rem); */
+  min-height: 50rem;
   background-color: white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.endGame {
+  font-size: 5rem;
+  color: red;
+}
+
+.finalScore {
+  font-size: 4rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+  cursor: pointer;
 }
 
 .bubble {
